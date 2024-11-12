@@ -1,0 +1,83 @@
+{
+    "Jeannette": {
+      "Graphiques": "rwx",
+      "Finances": "rwx",
+      "HR": "rwx",
+      "Développement": "rwx",
+      "Maintenance": "rwx",
+      "Acquisition": "rwx",
+      "Recherche": "rwx",
+      "Sécurité": "rwx",
+      "Armement": "rwx"
+    },
+    "Magally": {
+      "Graphiques": "x",
+      "Finances": "x",
+      "HR": "x",
+      "Développement": "x",
+      "Maintenance": "x",
+      "Acquisition": "x",
+      "Recherche": "x",
+      "Sécurité": "x",
+      "Armement": "x"
+    },
+    "Moyo": {
+      "Graphiques": "r",
+      "Finances": "r",
+      "HR": "r",
+      "Développement": "r",
+      "Maintenance": "r",
+      "Acquisition": "r",
+      "Recherche": "r",
+      "Sécurité": "r",
+      "Armement": "r"
+    },
+    "Branktor": {
+      "Graphiques": "r",
+      "Finances": "r",
+      "HR": "r",
+      "Développement": "r",
+      "Maintenance": "r",
+      "Acquisition": "r"
+    },
+    "Kinfrack": {
+      "Graphiques": "r",
+      "Finances": "r",
+      "HR": "r",
+      "Développement": "rw",
+      "Maintenance": "rw",
+      "Acquisition": "rw"
+    },
+    "Domguia": {
+    },
+    "Joseph": {
+      "Graphiques": "r",
+      "Finances": "r",
+      "HR": "r",
+      "Développement": "r",
+      "Maintenance": "r",
+      "Acquisition": "r"
+    },
+    "Abena": {
+      "Graphiques": "r",
+      "Finances": "r",
+      "HR": "r",
+      "Développement": "r",
+      "Maintenance": "r",
+      "Acquisition": "r"
+    },
+    "Bosco": {
+      "Graphiques": "r",
+      "Finances": "r",
+      "HR": "r",
+      "Développement": "rx",
+      "Maintenance": "rx",
+      "Acquisition": "rx"
+    },
+    "Nams": {
+      "Graphiques": "rwx",
+      "Finances": "rwx",
+      "HR": "rwx"
+    }
+  }
+  

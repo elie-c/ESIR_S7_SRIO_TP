@@ -1,0 +1,18 @@
+ 1908  history 20 > partie2.txt
+ 1909  mkdir HACKER CRACKER
+ 1910  mv CRACKER BLACKHAT
+ 1911  echo "I ........ because  ...... iiiiiiiii." > toto.txt
+ 1912  cat toto.txt 
+ 1913  cp toto.txt HACKER BLACKHAT
+ 1914  cp toto.txt HACKER/ BLACKHAT/
+ 1915  man co
+ 1916  man cp
+ 1917  find BLACKHAT/ HACKER/ -exec cp toto.txt {} \;
+ 1918  ls -r
+ 1919  man ln
+ 1920  ln HACKER/ hackerLn
+ 1921  ln -s  HACKER/ hackerLn
+ 1922  ln -s  BLACKHAT/ blackhatLn
+ 1923  rm -r BLACKHAT/ HACKER/
+ 1924  ls -l
+ 1925  history 18 > partie3.txt

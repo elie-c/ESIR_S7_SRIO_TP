@@ -1,0 +1,15 @@
+ 1894  lsb_release 
+ 1895  cat /etc/os-release 
+ 1896  uname -r
+ 1897  uname -a
+ 1898  who
+ 1899  su
+ 1900  sudo
+ 1901  su 
+ 1902  su user
+ 1903  su elie
+ 1904  `history 5 > partie1.txt`
+ 1905  cd ESIR/S7/SRIO/
+ 1906  cd TP/
+ 1907  ls
+ 1908  history 15 > partie1.txt

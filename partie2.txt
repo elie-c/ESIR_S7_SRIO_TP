@@ -1,0 +1,20 @@
+ 1889  env DEBUG=debug PORT=8080 HOST=127.0.0.1 node client/client.js --name "Alice1" --password "bobforever"
+ 1890  env DEBUG=debug PORT=8080 HOST=127.0.0.1 node client/client.js --name "Alice1" --password "bobforeverFALSE"
+ 1891  exit
+ 1892  man man
+ 1893  cat /etc/shadow
+ 1894  sudo cat /etc/shadow
+ 1895  cat /etc/passwd
+ 1896  cat /etc/passwd | sort
+ 1897  man find
+ 1898  man find | tail
+ 1899  man find 
+ 1900  find
+ 1901  find /etc
+ 1902  find /etc -
+ 1903  find /etc "root"
+ 1904  find /etc "root" | wc
+ 1905  find . "root" | wc
+ 1906  find . "root" 
+ 1907  find .
+ 1908  history 20 > partie2.txt

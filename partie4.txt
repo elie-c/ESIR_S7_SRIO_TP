@@ -1,0 +1,34 @@
+ 1929  sed -n '1,1p' toto.txt
+ 1930  find /etc -name "a..e"
+ 1931  ls
+ 1932  ls /etc
+ 1933  find /etc -name "a..e"
+ 1934  find -f /etc -name "a..e"
+ 1935  man find
+ 1936  find /etc -name "a..e" -print
+ 1937  find /etc -regex "a..e"
+ 1938  find /etc -regex "a..e*"
+ 1939  find /etc -regex ^[a-e]
+ 1940  find /etc -regex ^[a-e] -print
+ 1941  find /etc -regex "^[a-e]"
+ 1942  find /etc -regex '^[a-e]'
+ 1943  find /etc -name '[a-e]*'
+ 1944  man sort
+ 1945  cat data.txt | sort -dr > data.txt
+ 1946  cat data.txt | sort -dr 
+ 1947  cat data.txt | sort -dr | ~  > data.txt
+ 1948  cat data.txt | sort -dr 
+ 1949  MAN SORT
+ 1950  man sort
+ 1951  sort -dro data.txt data.txt
+ 1952  find / -type f -regex '.*/[^0-9]*$'
+ 1953  man sed
+ 1954  man sed | grep replace
+ 1955  sed s/"."/";" affiche.txt 
+ 1956  man sed
+ 1957  sed 's/\./;/g' affiche.txt
+ 1958  find /usr -size +1M
+ 1959  find /usr -size +1M -perm -755
+ 1960  find / -user elie -perm -466
+ 1961  find /home -user elie -perm -466
+ 1962  history 34 > partie4.txt
