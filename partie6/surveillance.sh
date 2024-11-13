@@ -33,10 +33,7 @@ echo "Début de la surveillance pour une durée de $duration secondes. Les logs 
 # Fonction pour surveiller un dossier et enregistrer les accès
 monitor_directory() {
     local dir=$1
-    inotifywait -m -e access "$dir" --format '%T %w %u' --timefmt '%Y-%m-%d %H:%M:%S' |
-    while read -r date path user; do
-        echo "$date : Accès par $user sur $path" >> "$log_file"
-    done
+    sudo inotifywait -m -e ACCESS -t $duration -o $log_file $dir
 }
 
 # Lancement de la surveillance en arrière-plan pour chaque dossier
