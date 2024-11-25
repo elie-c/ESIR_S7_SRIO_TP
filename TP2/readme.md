@@ -14,3 +14,6 @@ Généré par ChatGPT
 ## Luter contre ce problème
 Utiliser des prepared request/statements pour gérer l'authentification.
 
+# DOS
+## Nombre de clients
+Nous constatons que la latence chute de 40% à partir de 5 clients

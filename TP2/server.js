@@ -28,10 +28,30 @@ app.post('/login', (req, res) => {
   const email = req.body.email;
   const password = req.body.password;
 
+  // Ceci est la méthode protégée, avec les prepare statement
+  const query = db.prepare(`SELECT * FROM users WHERE email = ? AND password = ?`);
+  query.get(email, password, (err, row) => {
+    if (err) {
+        console.error(err);
+        res.status(500).send("Erreur dans la base de données.");
+    } else {
+      if (row) {
+        res.send(`Bienvenue, ${row.email}!`);
+      } else {
+        console.log("Erreur avec "+ email+ " et "+password);
+        res.send("Identifiants incorrects.");
+      }
+    }
+  });
+});
+
+// Route pour traiter la connexion de manière naive
+app.post('/login-naive', (req, res) => {
+  const email = req.body.email;
+  const password = req.body.password;
   
   // Ceci est une méthode naïve, vulnérable aux injections SQL
-  /*const query = `SELECT * FROM users WHERE email = '${email}' AND password = '${password}'`;
-
+  const query = `SELECT * FROM users WHERE email = '${email}' AND password = '${password}'`;
   db.get(query, (err, row) => {
     if (err) {
       res.status(500).send("Erreur dans la base de données.");
@@ -43,23 +63,12 @@ app.post('/login', (req, res) => {
       }
     }
   });
-  */
-  
-  // Ceci est la méthode protégée, avec les prepare statement
-  const query = db.prepare(`SELECT * FROM users WHERE email = ? AND password = ?`);
-  const data = [email, password];
-  db.run(query, data, (err, row) => {
-    if (err) {
-        res.status(500).send("Erreur dans la base de données.");
-    } else {
-      if (row) {
-        res.send(`Bienvenue, ${row.email}!`);
-      } else {
-        res.send("Identifiants incorrects.");
-      }
-    }
-  });
+});
 
+// Route pour traiter un pool de connexions
+app.post('/login-pool', (req, res) => {
+  const email = req.body.email;
+  const password = req.body.password;
 });
 
 // Démarrer le serveur
